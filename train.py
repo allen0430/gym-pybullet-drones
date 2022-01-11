@@ -15,6 +15,6 @@ print("[INFO] Observation space:", env.observation_space)
 check_env(env, warn=True, skip_render_check=True)
 
 model = A2C('MlpPolicy', env, verbose=1)
-model.learn(total_timesteps=int(1e7)) 
+model.learn(total_timesteps=int(1e9)) 
 model.save('drone_a2c')
 
